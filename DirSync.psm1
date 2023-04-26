@@ -53,7 +53,7 @@ function Sync-LAPS {
         $PSBoundParameters.LDAPFilter = "(objectClass=computer)"
     }
 
-    Invoke-DirSync @PsBoundParameters -Attributes ("ms-Mcs-AdmPwd")
+    Invoke-DirSync @PsBoundParameters -Attributes ("ms-Mcs-AdmPwd", "msLAPS-Password")
 }
 
 function Sync-Attributes {

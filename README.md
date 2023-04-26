@@ -10,7 +10,7 @@ See technical details at https://simondotsh.com/infosec/2022/07/11/dirsync.html.
 `Import-Module .\DirSync.psm1`
 
 ## Sync-LAPS
-Uses the DirSync LDAP control to synchronize LAPS' attribute `ms-Mcs-AdmPwd`. Requires `DS-Replication-Get-Changes` and `DS-Replication-Get-Changes-In-Filtered-Set`.
+Uses the DirSync LDAP control to synchronize Legacy Microsoft LAPS' attribute `ms-Mcs-AdmPwd` and Windows LAPS' `msLAPS-Password`. Requires `DS-Replication-Get-Changes` and `DS-Replication-Get-Changes-In-Filtered-Set`.
 
 ### Synchronize the LAPS password of all computer accounts using the current domain context
 `Sync-LAPS`
